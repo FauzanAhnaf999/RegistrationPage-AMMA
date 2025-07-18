@@ -1,64 +1,61 @@
-Halaman Pendaftaran Program AMMA
-Ini source code untuk landing page pendaftaran Program AMMA (Ayo Menghafal dan Memahami Al-Qur'an). Dibuatnya pakai Vite, React, TypeScript, dan Tailwind CSS.
+# Halaman Pendaftaran Program AMMA
 
-Tentang Proyek Ini
+Ini *source code* untuk landing page pendaftaran Program AMMA (Ayo Menghafal dan Memahami Al-Qur'an). Dibuatnya pakai Vite, React, TypeScript, dan Tailwind CSS.
+
+### Tentang Proyek Ini
+
 Jadi, halaman ini gunanya untuk pendaftaran program tahfidz dan tahsin AMMA. Isinya ada info soal programnya, statistik pendaftar, dan formulir yang datanya nanti otomatis masuk ke Google Sheet.
 
-Fitur-fiturnya:
-Tampilan Depan Informatif: Ada bagian hero yang nampilin info-info utama soal AMMA.
+### Fitur-fiturnya:
 
-Formulir Lengkap: Formulir pendaftarannya detail, dari data diri sampai komitmen infaq.
+  * **Tampilan Depan Informatif**: Ada bagian hero yang nampilin info-info utama soal AMMA.
+  * **Formulir Lengkap**: Formulir pendaftarannya detail, dari data diri sampai komitmen infaq.
+  * **Validasi Input**: Ada pengecekan input biar data yang dikirim lebih akurat.
+  * **Umur Otomatis**: Umur pendaftar otomatis kehitung dari tanggal lahir yang diisi.
+  * **Terkoneksi ke Google Sheets**: Data dari formulir langsung dikirim ke Google Sheets pakai Google Apps Script.
+  * **Desain Responsif**: Tampilannya udah bagus dibuka di HP maupun di desktop.
 
-Validasi Input: Ada pengecekan input biar data yang dikirim lebih akurat.
+### Teknologi yang Dipakai:
 
-Umur Otomatis: Umur pendaftar otomatis kehitung dari tanggal lahir yang diisi.
+  * **Framework**: React ^18.3.1
+  * **Build Tool**: Vite ^5.4.2
+  * **Bahasa**: TypeScript ^5.5.3
+  * **Styling**: Tailwind CSS ^3.4.1
+  * **Linting**: ESLint ^9.9.1
+  * **Ikon**: Lucide React ^0.344.0
 
-Terkoneksi ke Google Sheets: Data dari formulir langsung dikirim ke Google Sheets pakai Google Apps Script.
+### Cara Menjalankan Lokal
 
-Desain Responsif: Tampilannya udah bagus dibuka di HP maupun di desktop.
-
-Teknologi yang Dipakai:
-Framework: React ^18.3.1
-
-Build Tool: Vite ^5.4.2
-
-Bahasa: TypeScript ^5.5.3
-
-Styling: Tailwind CSS ^3.4.1
-
-Linting: ESLint ^9.9.1
-
-Ikon: Lucide React ^0.344.0
-
-Cara Menjalankan Lokal
 Kalau mau coba jalanin di komputermu, begini caranya:
 
-Clone repo-nya:
+1.  **Clone repo-nya:**
 
-Bash
+    ```bash
+    git clone https://github.com/fauzanahnaf999/registrationpage-amma.git
+    cd RegistrationPage-AMMA-a9f389dce48d2adff512a933841c03f57a06be89
+    ```
 
-git clone https://github.com/fauzanahnaf999/registrationpage-amma.git
-cd RegistrationPage-AMMA-a9f389dce48d2adff512a933841c03f57a06be89
-Install dependencies:
+2.  **Install dependencies:**
 
-Bash
+    ```bash
+    npm install
+    ```
 
-npm install
-Jalankan server dev:
+3.  **Jalankan server dev:**
 
-Bash
+    ```bash
+    npm run dev
+    ```
 
-npm run dev
-Setelah itu, buka http://localhost:5173 di browser.
+    Setelah itu, buka `http://localhost:5173` di browser.
 
-Daftar Perintah (Scripts)
-npm run dev: Buat jalanin di mode development.
+### Daftar Perintah (Scripts)
 
-npm run build: Buat build proyeknya biar siap di-deploy.
+  * `npm run dev`: Buat jalanin di mode development.
+  * `npm run build`: Buat *build* proyeknya biar siap di-deploy.
+  * `npm run lint`: Buat ngecek ada *error* atau kode yang kurang rapi apa nggak.
+  * `npm run preview`: Buat lihat hasil *build*-nya secara lokal.
 
-npm run lint: Buat ngecek ada error atau kode yang kurang rapi apa nggak.
+### Catatan Penting (Backend)
 
-npm run preview: Buat lihat hasil build-nya secara lokal.
-
-Catatan Penting (Backend)
-Nah, formulirnya ini kan ngirim data ke Google Apps Script. Kalau kamu mau pakai ini buat proyek lain, URL script di src/components/RegistrationForm.tsx jangan lupa diganti sama URL Google Apps Script punya kamu, ya.
+Nah, formulirnya ini kan ngirim data ke Google Apps Script. Kalau kamu mau pakai ini buat proyek lain, URL *script* di `src/components/RegistrationForm.tsx` jangan lupa diganti sama URL Google Apps Script punya kamu, ya.
