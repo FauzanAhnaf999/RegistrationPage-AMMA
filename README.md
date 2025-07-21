@@ -59,3 +59,5 @@ Kalau mau coba jalanin di komputermu, begini caranya:
 ### Catatan Penting (Backend)
 
 Nah, formulirnya ini kan ngirim data ke Google Apps Script. Kalau kamu mau pakai ini buat proyek lain, URL *script* di `src/components/RegistrationForm.tsx` jangan lupa diganti sama URL Google Apps Script punya kamu, ya.
+
+https://docs.google.com/spreadsheets/d/1cRgIh8Ob_YiOusvK4lpgGrGTfKyA0dHjH9wh1jkQ438/edit?usp=sharing
